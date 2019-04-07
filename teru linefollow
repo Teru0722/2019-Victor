@@ -2,24 +2,24 @@
 
 int main()
 {
-
-    void line_follow(){
+    while(1 == 1){
     
     //find grey
-    while(analog(0) > 2200){
-    printf("grey");
-    mav(0,0);
-    mav(1,100);
+    while(analog(0) > 1600){
+    printf("grey\n");
+    motor(0,100);
+    motor(1,500);
     }
     
     //find white
-    while(analog(0) < 2200){
-    printf("white");
-    mav(0,100);
-    mav(1,0);
+    while(analog(0) < 1600){
+    printf("white\n");
+    motor(0,500);
+    motor(1,100);
     }
     
     }
-    
+
     return 0;
 }
+
