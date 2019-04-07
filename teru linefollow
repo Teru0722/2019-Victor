@@ -1,0 +1,25 @@
+#include <kipr/botball.h>
+
+int main()
+{
+
+    void line_follow(){
+    
+    //find grey
+    while(analog(5) > 3800){
+    printf("grey");
+    mav(0,0);
+    mav(1,100);
+    }
+    
+    //find white
+    while(analog(5) < 3800){
+    printf("white");
+    mav(0,100);
+    mav(1,0);
+    }
+    
+    }
+    
+    return 0;
+}
