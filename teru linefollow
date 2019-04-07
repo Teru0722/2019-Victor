@@ -6,14 +6,14 @@ int main()
     void line_follow(){
     
     //find grey
-    while(analog(5) > 3800){
+    while(analog(0) > 2200){
     printf("grey");
     mav(0,0);
     mav(1,100);
     }
     
     //find white
-    while(analog(5) < 3800){
+    while(analog(0) < 2200){
     printf("white");
     mav(0,100);
     mav(1,0);
